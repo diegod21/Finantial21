@@ -5,14 +5,45 @@
     flex-direction: column;
     justify-content: center;
 }
-.boxLogin{
-    position: relative;
+.boxLogin {
+    align-self: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 300px;
-    margin: 20px;
-    background-color: rgb(145, 145, 145);
-}
-.input-label {
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Estilo do título */
+  .boxLogin h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Container do campo de input */
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* Estilo do input */
+  .input-field {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s ease;
+    background-color: #f9f9f9;
+  }
+  
+  /* Label como placeholder animado */
+  .input-label {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -21,23 +52,32 @@
     color: #999;
     transition: 0.2s ease;
     pointer-events: none;
-}
-
-/* Estilo do input */
-.input-field {
-    width: 100%;
-    padding: 14px 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-    transition: 0.2s ease;
-}
-
-/* Quando o input está em foco ou com conteúdo */
-.input-field:focus + .input-label,
-.input-field:not(:placeholder-shown) + .input-label {
+  }
+  
+  /* Quando o input está em foco ou preenchido */
+  .input-field:focus + .input-label,
+  .input-field:not(:placeholder-shown) + .input-label {
     top: 0;
-    font-size: 12px;
+    font-size: 14px;
     color: #333;
-}
+    background-color: #f9f9f9;
+    padding: 7px;
+  }
+  
+  /* Estilo do botão */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Animação de hover no botão */
+  .login-button:hover {
+    background-color: #45a049;
+  }
