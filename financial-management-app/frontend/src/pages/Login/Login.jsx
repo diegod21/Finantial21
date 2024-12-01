@@ -4,7 +4,10 @@ import { useForm } from "react-hook-form";
 
 function Login() {
   const { register, handleSubmit, errors } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+
+  }
 
   return (
     <div className="main">
@@ -17,7 +20,7 @@ function Login() {
             type={"text"}
             register={register}
           />
-          <Input field={"password"} placeholder={"Senha"} type={"password"} />
+          <Input field={"password"} placeholder={"Senha"} type={"password"} register={register} />
           <button className="login-button" type="submit">
             Entrar
           </button>
