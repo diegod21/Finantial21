@@ -1,6 +1,6 @@
 // Login.tsx
 import "./Login.css";
-import Input from "../../components/Input.tsx";
+import Input from "../../components/Input";
 import { useForm } from "react-hook-form";
 import React from "react";
 

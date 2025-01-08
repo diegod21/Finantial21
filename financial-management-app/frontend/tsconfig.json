@@ -1,0 +1,9 @@
+{
+"compilerOptions": {
+    "types": ["jest", "@testing-library/jest-dom", "node"], // Use "mocha" se estiver usando Mocha
+    "esModuleInterop": true,
+    "jsx": "react",  // Garante a interoperabilidade com ES Modules
+    "allowSyntheticDefaultImports": true, // Opcional, mas ajuda na importação de módulos
+    "moduleResolution": "node",
+    }
+}
